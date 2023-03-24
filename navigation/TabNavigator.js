@@ -11,9 +11,9 @@ const BottomTabNavigator= ()=> {
      screenOptions={({route}) => ({
       tabBarIcon:({focuzed, color, size})=> {
         let iconName;
-        if(route.Name === 'Feed'){
+        if(route.name === 'Feed'){
           iconName = focuzed ? 'book' : 'book-outline';
-        }else if(route.Name === 'Profile'){
+        }else if(route.name === 'Profile'){
             iconName = focuzed ? 'create' : 'create-outline';  
         }
         return <IonIcons name={iconName} size={size} color={color} />    
